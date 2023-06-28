@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="author" content="crystalworld">
+    <meta name="google-site-verification" content="jZwr88wY1PCrh_8cwdXUmjwSZASU82bq3GHXC6lehik">
+    <title>自由钢琴 - 在 | 在线钢琴，键盘钢琴，模拟钢琴，多种乐器选择，好听又好玩</title>
+    <link rel="shortcut icon" href="./favicon.png">
+    <script>
+        const STATIC_PATH = '{:plugin_static($plugin.alias)}';
+        var ua = window.navigator.userAgent
+        if (ua.match(/mobile/i) && ua.indexOf('iPad') < 0) {
+            // 是手机端浏览器 且 不是iPad
+            window.isMobile = true;
+            if (window.location.pathname.indexOf('/mobile') < 0) {
+                window.location.pathname = '/mobile';
+            }
+        } else {
+            window.isMobile = false;
+            if (window.location.pathname.indexOf('/mobile') >= 0) {
+                window.location.pathname = '/';
+            }
+        }</script>
+    <link href="{:plugin_static($plugin.alias)}/css/share.min.css" rel="stylesheet">
+    <link href="{:plugin_static($plugin.alias)}/css/app.6bb525d7ae7a301ca9322bb7dbef681a.css" rel="stylesheet">
+</head>
+<body>
+<div id="app"></div>
+<script src="{:plugin_static($plugin.alias)}/js/jquery3.min.js"></script>
+<script type="text/javascript" src="{:plugin_static($plugin.alias)}/js/manifest.bcd8ff6250438375a9b9.js"></script>
+<script type="text/javascript" src="{:plugin_static($plugin.alias)}/js/vendor.d9a8a3e67a2e29a049b4.js"></script>
+<script type="text/javascript" src="{:plugin_static($plugin.alias)}/js/app.7e44b3de77b6cf019159.js"></script>
+</body>
+</html>
